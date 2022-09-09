@@ -1,9 +1,11 @@
 a {
   text-decoration: none;
   color: black;
+}
+
+.nav-grid {
   display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 5% 5%;
 }
 
 p {
@@ -32,6 +34,11 @@ span {
   width: 100px;
   height: 100px;
   animation: spin 2s linear infinite;
+}
+
+.error-contact-form {
+  display: none;
+  color: red;
 }
 
 @keyframes spin {

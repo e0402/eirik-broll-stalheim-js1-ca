@@ -9,55 +9,73 @@
     <link rel="icon" href="data:;base64,=" />
   </head>
   <body>
+    <header>
+        <nav class="nav-grid">
+            <div>
+                <a href="index.html">Home</a>
+            </div>
+        </nav>
+    </header>
     <main>
       <h1>Contact</h1>
-      <form id="contactForm">
+      <form id="contact">
         <div>
-            <label for="first-name"></label>
+            <label for="first-name">First name:</label>
+        </div>
+        <div>
             <input
-                type="text"
                 name="first-name"
                 id="first-name"
-                placeholder="First name"
+                placeholder="John"
             />
         </div>
+        <div class="error-contact-form" id="first-name-error">Please type in your first name here</div>
         <div>
-            <label for="last-name"></label>
+            <label for="last-name">Last name:</label>
+        </div>    
             <input
-                type="text"
                 name="last-name"
                 id="last-name"
-                placeholder="Last name"
+                placeholder="Doe"
             />
         </div>
+        <div class="error-contact-form" id="last-name-error">Please type in your last name here</div>
         <div>
-            <label for="email"></label>
+            <label for="email">Email address:</label>
+        </div>
+        <div>    
             <input
-                type="email"
                 name="email"
                 id="email"
-                placeholder="Email address"
+                placeholder="example@something.com"
             />
         </div>
+        <div class="error-contact-form" id="email-error">Please type in your email address here</div>
         <div>
-            <label for="address"></label>
+            <label for="address">Address:</label>
+        </div>
+        <div>
             <input
-              type="text"
               name="address"
               id="address"
-              placeholder="Street address"
+              placeholder="Happy street 99"
             />
         </div>
+        <div class="error-contact-form" id="address-error">Please type in your street address here</div>
         <div>
-            <label>
+            <label for="subject">Subject:</label>
+        </div>
+        <div>    
             <input
-                type="text"
                 name="subject"
                 id="subject"
-                placeholder="Subject"
+                placeholder="I have an urgent request"
             />
         </div>
-        <button>Submit info</button>
+        <div class="error-contact-form" id="subject-error">Please choose a subject</div>
+        <div class="">     
+            <input type="submit" value="Submit info" class="">
+        </div>
       </form>
     </main>
     <script src="js/components/message.js"></script>
