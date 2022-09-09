@@ -33,7 +33,7 @@ fetchSeasonDetails();
 
 function createHtml(details) {
   detailsContainer.innerHTML = `<h2>Season: ${details.number}</h2>
-                                    <ul class="">
+                                    <ul>
                                         <li><span>Number of episodes: </span>${details.episodeOrder}</li>
                                         <li><span>Premiere date: </span>${details.premiereDate}</li>
                                         <li><span>End date: </span>${details.endDate}</li>
@@ -41,5 +41,5 @@ function createHtml(details) {
                                         <li><span>Country: </span>${details.network.country.name}</li>
                                     </ul>    
                                         <h3>Summary:</h3>
-                                        <p class="">${details.summary}</p>`;
+                                        <p>${details.summary}</p>`;
 }
