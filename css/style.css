@@ -1,0 +1,44 @@
+a {
+  text-decoration: none;
+  color: black;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+p {
+  max-width: 600px;
+}
+
+main {
+  line-height: 1.5;
+}
+span {
+  color: black;
+  font-weight: bold;
+}
+
+.styling {
+  background: rgb(233, 233, 233);
+  padding: 1em;
+  padding-left: 50px;
+  max-width: 250px;
+}
+
+.loading-wheel {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid rgb(0, 139, 0);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
