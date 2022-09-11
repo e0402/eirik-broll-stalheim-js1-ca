@@ -1,4 +1,4 @@
-const tvshowSeasons = document.querySelector(".results");
+const tvshowSeasons = document.querySelector(".seasons-list-results");
 
 const url = "https://api.tvmaze.com/shows/11/seasons";
 

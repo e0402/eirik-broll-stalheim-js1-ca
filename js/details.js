@@ -1,4 +1,4 @@
-const seasonDetails = document.querySelector(".show-details");
+const seasonDetails = document.querySelector(".season-info-results");
 
 const queryString = document.location.search;
 
