@@ -1,4 +1,4 @@
-const resultsContainer = document.querySelector(".results");
+const tvshowSeasons = document.querySelector(".results");
 
 const url = "https://api.tvmaze.com/shows/11/seasons";
 
@@ -9,12 +9,12 @@ async function fetchSeasons() {
 
     console.log(json);
 
-    resultsContainer.innerHTML = "";
+    tvshowSeasons.innerHTML = "";
 
     const seasons = json;
 
     seasons.forEach(function (season) {
-      resultsContainer.innerHTML += `<a href="details.html?id=${season.id}">
+      tvshowSeasons.innerHTML += `<a href="details.html?id=${season.id}">
                                       <div>
                                         <ul class="styling">
                                               <h3>Season: ${season.number}</h3>
@@ -27,7 +27,7 @@ async function fetchSeasons() {
     });
   } catch (error) {
     console.log(error);
-    resultsContainer.innerHTML = message("error", error);
+    tvshowSeasons.innerHTML = message("error", error);
   }
 }
 

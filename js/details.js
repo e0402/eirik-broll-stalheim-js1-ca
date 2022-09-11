@@ -1,4 +1,4 @@
-const detailsContainer = document.querySelector(".show-details");
+const seasonDetails = document.querySelector(".show-details");
 
 const queryString = document.location.search;
 
@@ -25,14 +25,15 @@ async function fetchSeasonDetails() {
     createHtml(details);
   } catch (error) {
     console.log(error);
-    detailsContainer.innerHTML = message("error", error);
+    seasonDetails.innerHTML = message("error", error);
   }
 }
 
 fetchSeasonDetails();
 
 function createHtml(details) {
-  detailsContainer.innerHTML = `<h2>Season: ${details.number}</h2>
+  document.title = `${details.number}`;
+  seasonDetails.innerHTML = `<h2>Season: ${details.number}</h2>
                                     <ul>
                                         <li><span>Number of episodes: </span>${details.episodeOrder}</li>
                                         <li><span>Premiere date: </span>${details.premiereDate}</li>
